@@ -12,9 +12,13 @@ function asignarTextoElemento(elemento, texto){
 }
 
 function verificarIntento (){
-
-    alert('Click desde el boton');
-
+    let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
+   console.log(typeof(numeroDeUsuario));
+   console.log(numeroSecreto);
+   console.log(typeof(numeroSecreto));
+   console.log(numeroSecreto);
+   console.log(numeroDeUsuario === numeroSecreto);
+    return;
 }
 
 function generarNumeroSecreto() {
