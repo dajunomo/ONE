@@ -1,16 +1,26 @@
+let numeroSecreto = generarNumeroSecreto ();
+
+console.log(numeroSecreto);
+
 
 function asignarTextoElemento(elemento, texto){
 
     let titulo = document.querySelector(elemento);
     titulo.innerHTML = texto;
-    
+    return;
 
 }
 
-function intentoDeUsuario (){
+function verificarIntento (){
 
     alert('Click desde el boton');
 
+}
+
+function generarNumeroSecreto() {
+    return Math.floor(Math.random()*10)+1;
+
+    
 }
 
 
