@@ -1,4 +1,5 @@
 let numeroSecreto = generarNumeroSecreto ();
+let intentos = 1;
 
 console.log(numeroSecreto);
 
@@ -20,21 +21,18 @@ function verificarIntento (){
    //console.log(typeof(numeroSecreto));
    //console.log(numeroSecreto);
    console.log(numeroSecreto);
+   console.log(intentos);
    if (numeroDeUsuario === numeroSecreto){
-         asignarTextoElemento('p','Acertaste el numero');
-   } else {
+         asignarTextoElemento ('p',`Acertaste el número en ${intentos} ${(intentos === 1) ? 'vez' : 'veces'}`);
+        }else {
     if ( numeroDeUsuario > numeroSecreto ){
         asignarTextoElemento ('p','El numero secreto es menor');
     }else{
         asignarTextoElemento('p','El numero secreto es mayor');
 
     }
-
+    intentos ++;
    }
-
-
-
-
     return;
 }
 
