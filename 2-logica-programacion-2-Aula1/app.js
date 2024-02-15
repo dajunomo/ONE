@@ -13,11 +13,28 @@ function asignarTextoElemento(elemento, texto){
 
 function verificarIntento (){
     let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
-   console.log(typeof(numeroDeUsuario));
+   
+   // vista en consola 
+    //console.log(typeof(numeroDeUsuario));
+   //console.log(numeroSecreto);
+   //console.log(typeof(numeroSecreto));
+   //console.log(numeroSecreto);
    console.log(numeroSecreto);
-   console.log(typeof(numeroSecreto));
-   console.log(numeroSecreto);
-   console.log(numeroDeUsuario === numeroSecreto);
+   if (numeroDeUsuario === numeroSecreto){
+         asignarTextoElemento('p','Acertaste el numero');
+   } else {
+    if ( numeroDeUsuario > numeroSecreto ){
+        asignarTextoElemento ('p','El numero secreto es menor');
+    }else{
+        asignarTextoElemento('p','El numero secreto es mayor');
+
+    }
+
+   }
+
+
+
+
     return;
 }
 
